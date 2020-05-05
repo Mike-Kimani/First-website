@@ -1,0 +1,94 @@
+.container{
+	max-width: 840px;
+	margin: 0 auto;
+}
+.intro{
+	text-align: center;
+}
+.about-grid{
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+.i-am, .i-like{
+	text-align: center;
+	text-decoration: none;
+}
+.about-lists{
+	list-style: none;
+	padding: 0;
+}
+
+@media (max-width: 480px){
+	.about-grid{
+		grid-template-columns: 100%;
+	}
+}
+.projects-heading{
+	text-align: center;
+
+}
+
+.project-image{
+	justify-self: center;
+	padding: 4%;
+}
+.my-projects{
+	display: grid;
+	grid-template-rows: 50% 50%;
+	grid-template-columns: 50% 50%;
+}
+@media (max-width: 480px){
+	.projects-heading{
+		text-align: left;
+	}
+
+
+	.my-projects{
+		grid-template-rows: 25% 25% 25% 25%;
+		grid-template-columns: 100%;
+	}
+}
+.links-and-contact{
+	display: grid;
+	grid-template-columns: 30% 70%;
+}
+.links{
+	justify-self:center;
+}
+.links-list{
+	list-style: none;
+	padding: 0%;
+}
+.contact{
+	
+	padding-top: 7%;
+}
+.email{
+	padding-bottom: 3%;
+
+}
+.message{
+	padding-left: 100%
+	padding-top: 2%
+}
+@media (max-width: 480px){
+	.links-and-contact{
+		grid-template-columns: 100%;
+
+	}
+	.contact{
+		grid-template-columns: 50%
+	}
+	.email{
+		padding-bottom: 5%;
+	}
+	.message{
+		padding-top: 5%;
+	}
+}
+.profile-picture{
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	
+}
