@@ -3,6 +3,7 @@
 <head>
 	<title>2nd webpage</title>
 <link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1"  >
 </head>
 <body>
@@ -10,7 +11,7 @@
 	<div class="intro">
 		<img class="profile-picture" src="images/profile-picture.jpg">
 		<h1>Michael Kimani</h1>
-		<h3>Web developer at Careerfoundry</h3>
+		<h2>Web developer at Careerfoundry</h2>
 		<p>{{ Pause and ponder }}</p>
 		<p class="quote">I love me.</p>
 
@@ -74,17 +75,21 @@
  	<div class="contact">
  		
  		<form action="#">
- 		    <div class="email">
+ 		    
  		    <label for="email">
- 				Email: <input type="email" id="email" placeholder="Enter your email address" >
+				 <h4> Email</h4> 
+				 <input type="email" id="email" placeholder="Enter your email" />
  			</label>
- 			</div>
- 			<div class="message">
+ 			
+ 			
  			<label for="message">
- 				Message: <textarea id="message">  </textarea>
+				 <h4>Message</h4>
+				 <textarea id="message"> Your message </textarea>
  			</label>
- 			<input type="submit" valid="Send message" >
- 			</div>
+ 			
+ 			<div class ="submit-button-wrapper">
+				<input type="submit" valid="Send message" >
+			 </div>
  		</form>
 
  	</div>

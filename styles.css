@@ -1,3 +1,12 @@
+body {
+	font-family: 'Noto Sans', sans-serif;
+}
+h1, h2, h3, h4 {
+	font-family: 'Roboto Mono', monospace;
+}
+
+
+
 .container{
 	max-width: 840px;
 	margin: 0 auto;
@@ -63,14 +72,7 @@
 	
 	padding-top: 7%;
 }
-.email{
-	padding-bottom: 3%;
 
-}
-.message{
-	padding-left: 100%
-	padding-top: 2%
-}
 @media (max-width: 480px){
 	.links-and-contact{
 		grid-template-columns: 100%;
@@ -79,12 +81,7 @@
 	.contact{
 		grid-template-columns: 50%
 	}
-	.email{
-		padding-bottom: 5%;
-	}
-	.message{
-		padding-top: 5%;
-	}
+
 }
 .profile-picture{
 	border-radius: 50%;
@@ -95,6 +92,7 @@
 	
 }
 .profile-picture:hover{
+	filter: brightness(.75);
 	box-shadow: 0 8px 12px 0 rgba( 34, 60, 80, .16);
 }
 .project-image{
@@ -123,5 +121,5 @@
 	visibility: hidden;
 	z-index: 2;
 	transition: all ease-in-out .2s;
-	
+
 }
