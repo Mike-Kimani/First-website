@@ -1,6 +1,7 @@
 body {
 	font-family: 'Noto Sans', sans-serif;
 	background-color: #caebf2;
+	color: #001f3f;
 }
 h1, h2, h3, h4 {
 	font-family: 'Roboto Mono', monospace;
@@ -15,6 +16,12 @@ h1, h2, h3, h4 {
 .container > div{
 	margin: 20px auto;
 	}
+hr {
+border: 0;
+height: 1px;
+background-image: linear-gradient(to right, rgba(29, 25, 25, 0), rgba(29, 25, 25, 0.75), rgba(29, 25, 25, 0));
+
+}	
 .intro{
 	text-align: center;
 }
@@ -135,9 +142,15 @@ form{
 	margin: 0 auto;
 }
 form input[type = "submit"]{
-width: 250px;	
+width: 250px;
+background-color: lightseagreen;
+color: white;
+	
 }
 .submit-button-wrapper{
 	margin: 20px 0px;
+	
+	
+	
 }
 
