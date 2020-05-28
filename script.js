@@ -19,14 +19,26 @@ return true;
     else
     return false;
 }
+function validateNSFW(reply){
+    if(reply.includes('crap')){
+        return false;
+    }
+    else
+    return true;
+}
 function clickListener(event){
 event.preventDefault();
 
 let emailText = document.querySelector('#email').value;
+let messageText = document.querySelector('#message').value;
 console.log('Email: ', emailText);
-console.log('message:', document.querySelector('#message').value);
+console.log('message:', messageText);
 if(validateEmail(emailText) !== true){
     console.log('Your email address must include an @')
+    return false;
+}
+if(validateNSFW(messageText) !== true){
+    console.log('Your reply must respect community guidelines')
     return false;
 }
 console.log('Thank you for the reply')
